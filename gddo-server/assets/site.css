@@ -137,3 +137,8 @@ h1:hover .permalink, h2:hover .permalink, h3:hover .permalink, h4:hover .permali
     text-transform: uppercase;
     font-size: 0.75em;
 }
+
+/* Lower visibility of internal packages */
+#pkg-subdirectories + table td a[href*="/internal/"], #pkg-subdirectories + table td a[href$="/internal"] {
+    opacity: 0.40;
+}
